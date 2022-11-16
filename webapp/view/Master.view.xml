@@ -1,0 +1,10 @@
+<mvc:View controllerName="stk.starterkit.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="Master">
+        <App id="app">
+            
+        </App>
+    </Shell>
+</mvc:View>

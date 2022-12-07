@@ -1,14 +1,16 @@
 <mvc:View xmlns:simple="sap.gantt.simple" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="stk.starterkit.controller.CustomerDetails" displayBlock="true">
     <App id="id">
-        <Page xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="CustomerDetails" title="{CompanyName}" showNavButton="false" navButtonPress="handleNavButtonPress">
-            <customHeader>
-                <Toolbar id="_IDGenToolbar1">
-                    <Button id="navButton" text=" " activeIcon="sap-icon://navigation-left-arrow" press="handleNavButtonPress"/>
-                    <Title id="_IDGenTitle1" text="{CompanyName}" />
-                    <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+        <Page xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="CustomerDetails" title="{CompanyName}" showNavButton="true" navButtonPress="handleNavButtonPress">
+            <!-- <customHeader> -->
+                <Bar id="_IDGenToolbar1">
+                    <!-- <Button id="navButton" text=" " activeIcon="sap-icon://navigation-left-arrow" press="handleNavButtonPress"/> -->
+                    <!-- <Title id="_IDGenTitle1" text="{CompanyName}" /> -->
+                    <!-- <ToolbarSpacer id="_IDGenToolbarSpacer1" /> -->
+                    <contentRight>
                     <Button id="ContactInfoButton" text="Show Contact Info" press="onCustomerPress2" class="sapUiMediumMarginEnd sapUiTinyMarginTopBottom" />
-                </Toolbar>
-            </customHeader>
+                    </contentRight>
+                </Bar>
+            <!-- </customHeader> -->
             <content>
                 <Table id="CustomerDetailTable" items="{path: 'Orders', parameters: {expand:'Employee'}}">
                     <columns>

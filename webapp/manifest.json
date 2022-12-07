@@ -87,7 +87,7 @@
             "routes": [
                 {
                     "name": "CustomersList",
-                    "pattern": "",
+                    "pattern": "" ,
                     "target": [
                         "CustomersList"
                     ]
